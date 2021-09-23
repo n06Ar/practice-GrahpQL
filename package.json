@@ -1,0 +1,12 @@
+{
+  "name": "node-grahp-ql",
+  "packageManager": "yarn@3.0.0",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.6.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
