@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    build: './docker/web'
+    container_name: web
+    volumes:
+      - ./docker/web/conf.d:/etc/nginx/conf.d
+    ports:
+      - "80:80"
+  fe:
+    build: './docker/fe'
+    container_name: fe
+    working_dir: /usr/src/app
+    command: [ sh, -c, yarn && yarn dev ]
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - "3000:3000"
