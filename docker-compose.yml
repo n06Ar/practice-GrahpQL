@@ -11,7 +11,7 @@ services:
     build: './docker/fe'
     container_name: fe
     working_dir: /usr/src/app
-    command: [ sh, -c, yarn && yarn dev ]
+    command: [ sh, -c, yarn && yarn start ]
     volumes:
       - ./:/usr/src/app
     ports:
