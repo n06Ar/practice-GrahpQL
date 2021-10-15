@@ -1,4 +1,4 @@
-# node-grahpQL
+# practice-grahpQL
 
 ## What is this repository?
 
